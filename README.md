@@ -9,7 +9,8 @@
 ~$ cd Downloads
 $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 ```
-3. Add paths at the end of the file: 
+3. Set **$GOROOT** & **$GOPATH** 
+(Add paths at the end of the file) 
 ```sh
 ~$ nano .bashrc
 export PATH=$PATH:/usr/local/go/bin

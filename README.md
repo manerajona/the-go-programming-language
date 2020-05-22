@@ -55,9 +55,9 @@ $ rm main.go
 
 ### CREATE YOUR WORKSPACE
 -----
-bin -> binaries (.exe or .sh)
-pkg -> packages downloaded
-src -> source code
+* bin -> binaries (.exe or .sh)
+* pkg -> packages downloaded
+* src -> source code
 ```sh
  $ mkdir go
  $ cd go

@@ -79,7 +79,7 @@ $ go run *.go
 ```sh
 $ go intall main.go
 ```
-### Format (all):
+#### Format (all):
 ```sh
 $ go fmt ./...
 ```

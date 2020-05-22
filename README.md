@@ -1,6 +1,6 @@
 # The Go programming language
 
-###Install go on linux
+### Install go on linux
 -----
 1. Download the go tar.gz from golang.org
 

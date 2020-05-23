@@ -32,7 +32,7 @@ func main() {
 
 	// Single quotes (for byte or rune)
 	// For try more symbols: https://www.w3schools.com/charsets/ref_utf_symbols.asp
-	c := '♡'
+	c := '♬'
 	fmt.Printf("The character of c is %c\n", c)
 	fmt.Printf("The type of c is %T\n", c)
 }

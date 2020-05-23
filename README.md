@@ -65,7 +65,7 @@ $ rm main.go
  $ mkdir bin pkg src
 ```
 
-### COMMANDS
+### The Go Tool
 -----
 ```sh
 $ go version
@@ -76,6 +76,10 @@ $ go help
 $ go build *.go
 $ go run *.go
 ```
+#### Clean object files:
+```sh
+$ go clean
+```
 #### install (need set $GOBIN)
 ```sh
 $ go intall main.go
@@ -83,6 +87,10 @@ $ go intall main.go
 #### Format (all):
 ```sh
 $ go fmt ./...
+```
+#### list packages:
+```sh
+$ go list
 ```
 #### Download (all) dependencies:
 ```sh

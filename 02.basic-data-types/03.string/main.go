@@ -19,4 +19,19 @@ func main() {
 	fmt.Println(s[:2], "is cool")
 	fmt.Println("Javascript is NOT", s[10:])
 
+	// Back quotes
+	s = `"Go is cool"`
+	fmt.Printf("%s\n", s)
+
+	s = `*******
+*Go   *
+*is   *
+*cool *
+*******`
+	fmt.Printf("%s\n", s)
+
+	// Single quotes (for byte or rune)
+	lire := '£'
+	fmt.Printf("The character of lire is %c\n", lire)
+	fmt.Printf("The type of lire is %T\n", lire)
 }

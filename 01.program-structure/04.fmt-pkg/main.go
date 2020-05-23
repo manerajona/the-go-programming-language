@@ -11,22 +11,22 @@ import "fmt"
 
 %t	boolean
 
-%d  decimal integer
+%d	decimal integer
 %c	rune
 
-%s  string
-%q  quoted string "abc"
+%s	string
+%q	quoted string "abc"
 ----------------------------------------
 more verbs on: https://golang.org/pkg/fmt/
 */
 
 /* SCAPES:
 --------------------
-\n  line break
+\n	line break
 \b	blackspace
-\t  horizontal tab
-\v  vertical tab
-\\  backslash
+\t	horizontal tab
+\v	vertical tab
+\\	backslash
 --------------------
 */
 

@@ -31,7 +31,8 @@ func main() {
 	fmt.Printf("%s\n", s)
 
 	// Single quotes (for byte or rune)
-	lire := '£'
-	fmt.Printf("The character of lire is %c\n", lire)
-	fmt.Printf("The type of lire is %T\n", lire)
+	// For try more symbols: https://www.w3schools.com/charsets/ref_utf_symbols.asp
+	c := '♡'
+	fmt.Printf("The character of c is %c\n", c)
+	fmt.Printf("The type of c is %T\n", c)
 }

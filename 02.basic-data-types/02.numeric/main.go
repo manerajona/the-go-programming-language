@@ -28,6 +28,7 @@ int64  : -9223372036854775808 to 9223372036854775807
 func main() {
 
 	fmt.Println("My micro. architecture is", runtime.GOARCH)
+	fmt.Println("default values:", i, u, r, b, d, f)
 
 	i = 8008
 	u = 255

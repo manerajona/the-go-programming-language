@@ -6,6 +6,8 @@ var s string
 
 func main() {
 
+	fmt.Printf("default value of string is %q\n", s)
+
 	s = "Go is all about types"
 
 	fmt.Printf("s value is %q\n", s)

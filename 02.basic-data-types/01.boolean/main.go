@@ -25,7 +25,7 @@ func main() {
 	flag = true
 	fmt.Println("New value of bool is", flag)
 
-	// Operations between booleans
+	// Logical operators
 	boo := false
 	fmt.Println("AND")
 	fmt.Println("Operation flag && boo\t=", flag && boo)
@@ -39,7 +39,7 @@ func main() {
 	fmt.Println("Operation !flag\t=", !flag)
 	fmt.Println("Operation !boo\t=", !boo)
 
-	// Logic operations
+	// Relational operators
 	fmt.Println("Logic Op.")
 	fmt.Println("Operation 1 == 2\t=", 1 == 2)
 	fmt.Println("Operation 1 == 1\t=", 1 == 1)

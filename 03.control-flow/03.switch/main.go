@@ -62,4 +62,16 @@ func main() {
 		fmt.Println("x<10")
 	}
 
+	// switch on type
+	switch interface{}(x).(type) {
+	case int:
+		fmt.Println("number")
+	case string:
+		fmt.Println("string")
+	case bool:
+		fmt.Println("boolean")
+	default:
+		fmt.Println("unknown")
+	}
+
 }

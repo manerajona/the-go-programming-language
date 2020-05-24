@@ -44,11 +44,11 @@ func main() {
 	//MOD
 	fmt.Println("b % a =", b%a)
 
-	// ++
+	// ADD 1
 	a++
 	fmt.Println("a++ =", a)
 
-	// --
+	// SUBSTRACT 1
 	a--
 	fmt.Println("a-- =", a)
 

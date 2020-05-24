@@ -75,19 +75,20 @@ func main() {
 	// SCIENTIFIC NOTATION
 
 	const avogadro = 6.02214076e23
+	const waterMolarMass = 18. // gr/mol
 
-	twoMole := 2 * avogadro
-	println("The number of particles in two Mole are", twoMole)
+	waterMass := waterMolarMass / avogadro // (gr/mol) * ( 1 mol / avogadro)
+	println("A water (H2O) molecule has a mass of", waterMass, "gr")
 
 	const amc = 1.660538e-27 // kg = 1 amu
 
-	oxigenMass := 16 * amc
-	println("The atomic mass of the oxigen is", oxigenMass, "kg")
+	oxygenMass := 16 * amc
+	println("The atomic mass of the oxigen is", oxygenMass, "kg")
 
 	const c = 299_792_458
 	println("The speed of light is", c, "m/s")
 
-	E := oxigenMass * c * c // E=mc2
+	E := oxygenMass * c * c // E=mc2
 	println("Kinetic energy (E) in the Oxigen is", E, "Joules")
 
 }

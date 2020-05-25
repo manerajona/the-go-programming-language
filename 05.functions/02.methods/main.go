@@ -30,7 +30,7 @@ func main() {
 			age:       50,
 		},
 		position: "CEO",
-		salary:   100_000_000.,
+		salary:   1_000_000.,
 	}
 	emp.work()
 

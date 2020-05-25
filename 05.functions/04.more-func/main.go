@@ -32,7 +32,7 @@ func main() {
 	fmt.Println(sum, "to the power 3 is", pow3)
 
 	// Callback
-	pow4 := callbackPow(g, sum)
+	pow4 := callbackPow(sum, g)
 	fmt.Println(sum, "to the power 4 is", pow4)
 
 	// Recursion
@@ -66,7 +66,7 @@ func variadicConcat(x ...interface{}) (result string) {
 	return
 }
 
-func callbackPow(f func(num int) int, num int) int {
+func callbackPow(num int, f func(num int) int) int {
 	return num * f(num)
 }
 

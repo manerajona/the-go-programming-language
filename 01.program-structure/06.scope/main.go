@@ -13,7 +13,7 @@ func main() {
 
 	// Clousures; Block scope (local)
 	{
-		// var "internal" is shadowing
+		// variable shadowing
 		internal := 0
 		fmt.Println("internal:", internal)
 		internal++
@@ -21,7 +21,7 @@ func main() {
 		internal++
 		fmt.Println("internal:", internal)
 		{
-			// var "internal" is shadowing again
+			// variable shadowing again
 			internal := 10
 			fmt.Println("internal:", internal)
 			internal++

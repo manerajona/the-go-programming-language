@@ -2,13 +2,8 @@ package main
 
 import "fmt"
 
-// pi has private access since starts with lowercase
 const pi = 3.14159
 
-/* Public access constants:
-When importing a package you can access only its exported identifiers.
-An identifier is exported if it begins with a capital letter.
-*/
 const (
 	// A represents Van der Pauw constant
 	A = 4.53236

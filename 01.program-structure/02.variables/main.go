@@ -7,7 +7,7 @@ func main() {
 	// Declare -> var name type
 	var x int
 
-	fmt.Println("Default values", x, global, outside)
+	fmt.Println("Default values", x)
 
 	// Assignment -> =
 	x = 5
@@ -32,8 +32,3 @@ func main() {
 
 	fmt.Println("my variables:", a, b, c, x, y, w, z, xx, yy)
 }
-
-var global int
-
-// outside := 0 // bad
-var outside = 0 // good

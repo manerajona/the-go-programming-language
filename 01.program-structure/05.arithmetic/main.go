@@ -52,23 +52,23 @@ func main() {
 	a--
 	fmt.Println("a-- =", a)
 
-	// ADD
+	// ADD value
 	b += a
 	fmt.Println("b += a =", b)
 
-	// SUB
+	// SUB value
 	b -= a
 	fmt.Println("b -= a =", b)
 
-	// MULT
+	// MULT by value
 	b *= a
 	fmt.Println("b *= a =", b)
 
-	// DIV
+	// DIV by value
 	b /= a
 	fmt.Println("b /= a =", b)
 
-	// MOD
+	// MOD by value
 	b %= a
 	fmt.Println("b %= a =", b)
 

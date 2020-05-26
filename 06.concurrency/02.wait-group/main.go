@@ -20,7 +20,7 @@ func main() {
 }
 
 func count(thing string) {
-	for i := 1; i < 100; i++ {
+	for i := 1; i <= 100; i++ {
 		fmt.Println(i, thing)
 		time.Sleep(10 * time.Millisecond)
 	}

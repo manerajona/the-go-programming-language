@@ -13,7 +13,7 @@ func main() {
 	wg.Add(2)
 
 	go count("sheep")
-	go count("siren")
+	go count("dolphin")
 
 	// Main thead wait till the wg counter is zero
 	wg.Wait()

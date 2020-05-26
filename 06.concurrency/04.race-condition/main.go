@@ -13,7 +13,7 @@ var counter int // shared resource
 func main() {
 	wg.Add(2)
 	go count("sheep")
-	go count("siren")
+	go count("dolphin")
 	wg.Wait()
 	fmt.Println("Final Counter:", counter)
 }

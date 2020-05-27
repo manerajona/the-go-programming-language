@@ -7,6 +7,10 @@ import (
 	"time"
 )
 
+/* The flag -f help us to find race conditions
+$ go run -f main.go
+*/
+
 var wg sync.WaitGroup
 var counter int // shared resource
 

@@ -7,8 +7,8 @@ import (
 	"time"
 )
 
-/* The flag -f help us to find race conditions
-$ go run -f main.go
+/* The flag -race help us to find race conditions
+$ go run -race main.go
 */
 
 var wg sync.WaitGroup

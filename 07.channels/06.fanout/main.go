@@ -19,7 +19,7 @@ func main() {
 	go consumer(ch1, ch2)
 
 	for value := range ch2 {
-		fmt.Println("Value:", value)
+		fmt.Println("Task:", value, "millis")
 	}
 
 }
@@ -45,8 +45,8 @@ func consumer(c1, c2 chan int) {
 	close(c2)
 }
 
-func task(num int) (ret int) {
-	ret = num + rand.Intn(500)
-	time.Sleep(time.Microsecond * time.Duration(ret))
+func task(num int) (duration int) {
+	duration = num + rand.Intn(500)
+	time.Sleep(time.Millisecond * time.Duration(duration))
 	return
 }

@@ -41,12 +41,9 @@ func consumer(e, o, q <-chan int) {
 			fmt.Println("Value eve:", value)
 		case value := <-o:
 			fmt.Println("Value odd:", value)
-		case value, ok := <-q:
+		case value := <-q:
 			fmt.Println("Value quit:", value)
 			fmt.Println("Value ok:", ok)
-			if ok {
-				return
-			}
 		}
 	}
 }

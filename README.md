@@ -99,7 +99,7 @@ $ go fmt ./...
 ```
 #### list packages:
 ```sh
-$ go list
+$ go list ...
 ```
 #### Download (all) dependencies:
 ```sh

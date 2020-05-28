@@ -9,7 +9,7 @@ func main() {
 	// Create a channel
 	channel := make(chan int)
 
-	// Create a new thread to suppy
+	// Create a new thread to supply
 	go func() {
 		for i := 1; i <= 10; i++ {
 			// Supply the channel

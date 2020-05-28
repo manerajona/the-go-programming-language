@@ -10,7 +10,6 @@
 $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 ```
 3. Set **$GOROOT** and **$GOPATH** 
-(Add exports at the end of the file) 
 ```sh
 ~$ nano .bashrc
 export PATH=$PATH:/usr/local/go/bin
@@ -18,9 +17,14 @@ export PATH=$PATH:/usr/local/go/bin
 ```
 ```sh
 ~$ nano .profile
+```
+(*Add exports at the end of the file*)
+```sh
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go            
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+```
+```sh
 ~$ source .profile
 ```
 4. Check it out

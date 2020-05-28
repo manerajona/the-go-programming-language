@@ -41,7 +41,6 @@ func consumer(c1, c2 chan int) {
 			wg.Done()
 		}(v)
 	}
-
 	wg.Wait()
 	close(c2)
 }

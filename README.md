@@ -12,7 +12,12 @@ $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 3. Set **$GOROOT** and **$GOPATH** 
 ```sh
 ~$ nano .bashrc
+```
+(*Add exports at the end of the file*)
+```sh
 export PATH=$PATH:/usr/local/go/bin
+```
+```sh
 ~$ source .bashrc
 ```
 ```sh

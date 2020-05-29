@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-// ErrNorgateMath refers to square root of negative number
+// ErrNorgateMath refers to square root of negative number error
 var ErrNorgateMath = errors.New("norgate math: square root of negative number")
 
 func main() {

@@ -4,7 +4,7 @@ import "log"
 
 func main() {
 	log.Println("Some util info")
-	log.Fatal("Something happend")
-	log.Panicln("Panick!") // Panick kills the program
+	log.Panicln("Panic!!")         // You can recover of panic
+	log.Fatal("Something happend") // You can't recover of fatal
 	log.Println("Never gets here")
 }

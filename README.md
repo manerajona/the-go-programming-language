@@ -1,7 +1,6 @@
 # The Go programming language
 
 ## Install go on linux
------
 1. Download the go tar.gz from golang.org
 
 2. Extract it into /usr/local
@@ -64,11 +63,10 @@ $ rm main.go
 ```
 
 ## Create a WORKSPACE
------
 * bin -> binaries (.exe or .sh)
 * pkg -> packages downloaded
 * src -> source code
-
+--------
 ```sh
  $ mkdir go
  $ cd go
@@ -76,7 +74,7 @@ $ rm main.go
 ```
 
 ## The Go Tool
---------
+
 #### Version & help
 ```sh
 $ go version
@@ -106,7 +104,7 @@ $ go get github.com/golang/example/hello
 ```
 
 ### Golint
---------
+
 #### Format (all):
 ```sh
 $ go fmt ./...
@@ -121,7 +119,7 @@ $ golint ./...
 ```
 
 ### Go Doc
---------
+
 #### Docs for current package
 ```sh
 $ go doc
@@ -142,7 +140,7 @@ $ godoc -http=:8080
 ```
 
 ### Testing
---------
+
 #### Command test
 ```sh
 $ go test
@@ -162,9 +160,8 @@ $ go tool cover -html=cover.out
 $ go tool cover -h
 ```
 
-
 ## Modules
---------
+
 #### Create new module:
 ```sh
 $ go mod init example.com/username/repo

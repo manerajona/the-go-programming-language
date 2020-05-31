@@ -1,6 +1,6 @@
 # The Go programming language
 
-### Install go on linux
+## Install go on linux
 -----
 1. Download the go tar.gz from golang.org
 
@@ -63,19 +63,21 @@ hello, world
 $ rm main.go
 ```
 
-### CREATE YOUR WORKSPACE
+## Create a WORKSPACE
 -----
 * bin -> binaries (.exe or .sh)
 * pkg -> packages downloaded
 * src -> source code
+
 ```sh
  $ mkdir go
  $ cd go
  $ mkdir bin pkg src
 ```
 
-### The Go Tool
------
+## The Go Tool
+--------
+#### Version & help
 ```sh
 $ go version
 $ go help
@@ -93,10 +95,6 @@ $ go clean
 ```sh
 $ go intall main.go
 ```
-#### Format (all):
-```sh
-$ go fmt ./...
-```
 #### list packages:
 ```sh
 $ go list ...
@@ -107,9 +105,66 @@ $ go get ./...
 $ go get github.com/golang/example/hello
 ```
 
-### MODULES
+### Golint
 --------
+#### Format (all):
+```sh
+$ go fmt ./...
+```
+#### Reports poor coding style
+```sh
+$ golint ./...
+```
+#### Reports suspicius constructs
+```sh
+$ golint ./...
+```
 
+### Go Doc
+--------
+#### Docs for current package
+```sh
+$ go doc
+```
+#### Doc third-party packages
+```sh
+$ go doc pkg
+$ go doc pkg.method
+
+$ godoc pkg
+$ godoc pkg method
+$ godoc -src pkg method
+```
+#### Run godoc.org on localhost:8080
+```sh
+$ sudo apt install -y golang-golang-x-tools
+$ godoc -http=:8080
+```
+
+### Testing
+--------
+#### Command test
+```sh
+$ go test
+$ go test ./..
+```
+#### test benchmark
+```sh
+$ go test -bench .
+```
+#### coverage
+```sh
+$ go test -cover .
+
+$ go test -coverprofile cover.out
+$ go tool cover -html=cover.out
+
+$ go tool cover -h
+```
+
+
+## Modules
+--------
 #### Create new module:
 ```sh
 $ go mod init example.com/username/repo

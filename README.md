@@ -80,12 +80,12 @@ $ rm main.go
 $ go version
 $ go help
 ```
-#### Build & run:
+#### Build & run
 ```sh
 $ go build *.go
 $ go run *.go
 ```
-#### Clean object files:
+#### Clean object files
 ```sh
 $ go clean
 ```
@@ -93,11 +93,11 @@ $ go clean
 ```sh
 $ go intall main.go
 ```
-#### list packages:
+#### list packages
 ```sh
 $ go list ...
 ```
-#### Download (all) dependencies:
+#### Download (all) dependencies
 ```sh
 $ go get ./...
 $ go get github.com/golang/example/hello
@@ -105,7 +105,7 @@ $ go get github.com/golang/example/hello
 
 ### Golint
 
-#### Format (all):
+#### Format (all)
 ```sh
 $ go fmt ./...
 ```
@@ -162,26 +162,22 @@ $ go tool cover -h
 
 ## Modules
 
-#### Create new module:
+#### Create new module
 ```sh
 $ go mod init example.com/username/repo
 $ cat go.mod
 $ cat go.sum
 ```
-#### Testing:
-```sh
-$ go test 
-```
-#### Show all dependencies:
+#### Show all dependencies
 ```sh
 $ go list -m all
 ```
-#### Get or upgrade dependencies:
+#### Get or upgrade dependencies
 ```sh
 $ go list -m -versions rsc.io/sampler
 $ go get rsc.io/sampler@1.3.1
 ```
-#### Clean dependencies:
+#### Clean dependencies
 ```sh
 $ go mod tidy
 ```

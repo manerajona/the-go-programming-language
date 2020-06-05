@@ -91,7 +91,7 @@ $ go clean
 ```
 #### install (need set $GOBIN)
 ```sh
-$ go intall main.go
+$ go install main.go
 ```
 #### list packages
 ```sh

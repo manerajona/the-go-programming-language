@@ -66,7 +66,7 @@ $ rm main.go
 * bin -> binaries (.exe or .sh)
 * pkg -> packages downloaded
 * src -> source code
---------
+
 ```sh
  $ mkdir go
  $ cd go

@@ -9,7 +9,7 @@
 $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 ```
 3. Set **$GOROOT** and **$GOPATH**
-GOROOT is where go is installed and GOPATH is a workspace of your preference, where binaries and third party libraries are stored.
+(GOROOT is where go is installed and GOPATH is a workspace of your preference, where binaries and third party libraries are stored).
 ```sh
 ~$ nano .bashrc
 ```

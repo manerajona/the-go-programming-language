@@ -8,7 +8,8 @@
 ~$ cd Downloads
 $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 ```
-3. Set **$GOROOT** and **$GOPATH** 
+3. Set **$GOROOT** and **$GOPATH**
+GOROOT is where go is installed and GOPATH is a workspace of your preference, where binaries and third party libraries are stored.
 ```sh
 ~$ nano .bashrc
 ```
@@ -63,6 +64,7 @@ $ rm main.go
 ```
 
 ## Create a WORKSPACE
+A workspace is where $GOPATH is pointing at and stores binaries, third party libs and go code as well.
 * bin -> binaries (.exe or .sh)
 * pkg -> packages downloaded
 * src -> source code

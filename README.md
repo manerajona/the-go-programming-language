@@ -98,7 +98,7 @@ $ go install main.go
 ```
 #### list packages
 ```sh
-$ go list ...
+$ go list ./...
 ```
 #### Download (all) dependencie(s)
 ```sh
@@ -167,20 +167,59 @@ $ go tool cover -h
 
 #### Create new module
 ```sh
-$ go mod init example.com/username/repo
-$ cat go.mod
-$ cat go.sum
+$ cd 11.modules/
+$ go mod init github.com/manerajona/go-mod-example
+$ ls
+go.mod
+
+$ go get go.uber.org/zap
+$ ls
+go.mod  go.sum
+
+cat go.mod 
+module github.com/manerajona/go-mod-example
+
+go 1.14
+
+require go.uber.org/zap v1.15.0 // indirect
 ```
 #### Show all dependencies
 ```sh
 $ go list -m all
 ```
-#### Get or upgrade dependencies
-```sh
-$ go list -m -versions rsc.io/sampler
-$ go get rsc.io/sampler@1.3.1
-```
-#### Clean dependencies
+
+#### Clear (adds or removes) dependencies
 ```sh
 $ go mod tidy
+```
+
+#### Get or upgrade dependencies
+
+* v0 - Unstable
+* v1 - Stable minor
+* v2 - Stable major
+* v0-beta - Experimental
+
+```sh
+$ go list -m -versions go.uber.org/zap
+go.uber.org/zap v0.1.0-beta.1 v1.0.0-rc.1 v1.0.0-rc.2 v1.0.0-rc.3 v1.0.0 v1.1.0 v1.2.0 v1.3.0 v1.4.0 v1.4.1 v1.5.0 v1.6.0 v1.7.0 v1.7.1 v1.8.0 v1.9.0 v1.9.1 v1.10.0 v1.11.0 v1.12.0 v1.13.0 v1.14.0 v1.14.1 v1.15.0
+
+$ go get go.uber.org/zap@v1.15.0
+```
+
+#### Download all mod dependencies
+```sh
+$ go mod download
+$ ls $GOPATH/pkg/mod
+```
+
+#### Clean local cache
+```sh
+$ go clean -cache -modcache -i -r
+$ ls $GOPATH/pkg/mod/cache/download/
+```
+
+#### Vendor folder (Optional)
+```sh
+$ go mod vendor
 ```

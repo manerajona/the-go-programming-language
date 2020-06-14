@@ -78,9 +78,13 @@ A workspace is where $GOPATH is pointing at and stores binaries, third party lib
 $ go version
 $ go help
 ```
-#### Build & run
+#### Build an executable
 ```sh
-$ go build *.go
+$ go build x.go
+$ ./x.sh
+```
+#### Run
+```sh
 $ go run *.go
 ```
 #### Clean object files
@@ -88,6 +92,7 @@ $ go run *.go
 $ go clean
 ```
 #### install (need set $GOBIN)
+* This install the program in the computer (is great in production)
 ```sh
 $ go install main.go
 ```
@@ -95,7 +100,7 @@ $ go install main.go
 ```sh
 $ go list ...
 ```
-#### Download (all) dependencies
+#### Download (all) dependencie(s)
 ```sh
 $ go get ./...
 $ go get github.com/golang/example/hello

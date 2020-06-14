@@ -65,7 +65,7 @@ $ rm main.go
 ```
 
 ## Create a WORKSPACE
-A workspace is where $GOPATH is pointing at and stores binaries, third party libs and go code as well.
+A workspace is where $GOPATH is pointing at and stores binaries, third party libs and the go code as well.
 * bin -> binaries (.exe or .sh)
 * pkg -> packages downloaded
 * src -> source code

@@ -11,18 +11,11 @@ $ tar -C /usr/local -xzf go*.linux-amd64.tar.gz
 3. Set env vars: **$GOROOT** and **$GOPATH**
 * GOROOT is where go is installed 
 * GOPATH is a workspace of your preference, where binaries and third party libraries are stored.
-```sh
-~$ nano .bashrc
-```
-(*Add exports at the end of the file*)
-```sh
-export PATH=$PATH:/usr/local/go/bin
-```
-```sh
-~$ source .bashrc
-```
+
 ```sh
 ~$ nano .profile
+o
+~$ nano .bashrc
 ```
 (*Add exports at the end of the file*)
 ```sh
@@ -32,6 +25,8 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ```
 ```sh
 ~$ source .profile
+o
+~$ source .bashrc
 ```
 4. Check it out
 ```sh

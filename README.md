@@ -110,7 +110,7 @@ $ go get github.com/golang/example/hello
 
 #### Format (all)
 ```sh
-$ go fmt ./...
+$ go fmt *.go
 ```
 #### Reports poor coding style
 ```sh

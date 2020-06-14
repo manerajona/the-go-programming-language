@@ -92,7 +92,7 @@ $ go run *.go
 $ go clean
 ```
 #### install (need set $GOBIN)
-* This install the program in the computer (is great in production)
+* This command installs the program in the computer (great in production)
 ```sh
 $ go install main.go
 ```

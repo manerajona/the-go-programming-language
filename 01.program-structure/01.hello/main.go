@@ -1,4 +1,4 @@
-/*  package main means it that this program is an executable
+/*  package main means that this is an executable program
     named packages correspond to reusable libraries in go
 */
 package main 

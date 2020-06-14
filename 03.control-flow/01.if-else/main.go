@@ -14,19 +14,19 @@ func main() {
 		fmt.Println("x is 0") // never get there
 	}
 
-	// if else
+	// if condition {} else {}
 	if x%2 == 0 {
 		fmt.Println("x is even")
 	} else {
 		fmt.Println("x is odd")
 	}
 
-	// initialization statement
+	// if initialization statement; condition {}
 	if y := 20; y > 0 {
 		fmt.Println("y is", y)
 	}
 
-	// if else if
+	// if initialization statement; condition {} else if condition {} else {}
 	if num := 128; num < 1 {
 		fmt.Println("num < 1")
 	} else if num < 10 {

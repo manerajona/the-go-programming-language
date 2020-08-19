@@ -83,6 +83,16 @@ $ go help
 $ go build x.go
 $ ./x.sh
 ```
+
+#### Cross compile
+
+Supported: aix, android, darwin, dragonfly, freebsd, hurd, illumos, js, linux, nacl, netbsd, openbsd, plan9, solaris, windows, zos
+
+```sh
+export GOOS=solaris
+go build main.go
+```
+
 #### Run
 ```sh
 $ go run *.go

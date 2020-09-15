@@ -185,6 +185,8 @@ $ go mod init github.com/manerajona/go-mod-example
 $ ls
 go.mod
 
+$ go get all
+(or)
 $ go get go.uber.org/zap
 $ ls
 go.mod  go.sum

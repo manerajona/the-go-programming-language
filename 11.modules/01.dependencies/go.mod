@@ -1,0 +1,5 @@
+module github.com/manerajona/go-mod-example
+
+go 1.14
+
+require rsc.io/quote v1.5.2

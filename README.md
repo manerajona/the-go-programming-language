@@ -134,7 +134,7 @@ $ golint ./...
 $ golint ./...
 ```
 
-### Go Doc
+## Go Doc
 
 #### Docs for current package
 ```sh
@@ -155,7 +155,7 @@ $ sudo apt install -y golang-golang-x-tools
 $ godoc -http=:8080
 ```
 
-### Testing
+## Testing
 
 #### Command test
 ```sh
@@ -176,7 +176,16 @@ $ go tool cover -html=cover.out
 $ go tool cover -h
 ```
 
-## Modules
+## Go Modules
+
+With Go modules, versions are referenced with semantic version tags:
+
+* major.minor.patch
+
+Ex: for v1.2.3
+* major version is 1 (backwards incompatible)
+* minor version is 2
+* patch version is 3
 
 #### Create new module
 ```sh
@@ -198,14 +207,15 @@ go 1.14
 
 require go.uber.org/zap v1.15.0 // indirect
 ```
+
 #### Show all dependencies
 ```sh
 $ go list -m all
 ```
 
-#### Clear (adds or removes) dependencies
+#### Show dependency
 ```sh
-$ go mod tidy
+$ go list -m rsc.io/q...
 ```
 
 #### Get or upgrade dependencies
@@ -220,6 +230,35 @@ $ go list -m -versions go.uber.org/zap
 go.uber.org/zap v0.1.0-beta.1 v1.0.0-rc.1 v1.0.0-rc.2 v1.0.0-rc.3 v1.0.0 v1.1.0 v1.2.0 v1.3.0 v1.4.0 v1.4.1 v1.5.0 v1.6.0 v1.7.0 v1.7.1 v1.8.0 v1.9.0 v1.9.1 v1.10.0 v1.11.0 v1.12.0 v1.13.0 v1.14.0 v1.14.1 v1.15.0
 
 $ go get go.uber.org/zap@v1.15.0
+
+$ go doc zap
+```
+
+#### Specify tagged and untagged versions
+
+**Tagged Latest**
+```sh
+$ go get golang.org/x/text@latest
+$ go get golang.org/x/text
+```
+**Tagged Release**
+```sh
+$ go get golang.org/x/text@v1.3.1
+```
+**Untagged Master**
+```sh
+$ go get golang.org/x/text@master
+```
+**Untagged Commit**
+```sh
+$ go get golang.org/x/text@af044c0995fe
+```
+
+#### Remove unused dependencies
+```sh
+$ go list -m all
+$ go mod tidy
+$ go list -m all
 ```
 
 #### Download all mod dependencies

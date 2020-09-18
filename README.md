@@ -261,6 +261,11 @@ $ go mod tidy
 $ go list -m all
 ```
 
+#### Module path replacement
+```sh
+$ go mod edit -replace=github.com/user1/project=github.com/user2/project@master
+```
+
 #### Download all mod dependencies
 ```sh
 $ go mod download
@@ -277,3 +282,15 @@ $ ls $GOPATH/pkg/mod/cache/download/
 ```sh
 $ go mod vendor
 ```
+
+#### Module mirror
+
+A module mirror is a special kind of module proxy that caches metadata and source code in its own storage system, allowing the mirror to continue to serve src that is not longer available. The Go team maintains a module mirror served at *https://proxy.golang.org* (by default in +1.13v, for earlier versions set GOPROXY). For setting a custom mirror ```export GOPROXY=proxy.example.com```.
+
+#### Module private
+
+The GOPRIVATE env var may be used by other tools as well to identify non-public modules. For example, if a company ran a module proxy serving private modules, users would configure Go using:
+* GOPRIVATE=*.corp1.example.com,*.corp2.example.com
+* GOPROXY=proxy.example.com
+* GONOPROXY=none
+

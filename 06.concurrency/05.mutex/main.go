@@ -2,33 +2,26 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"sync"
-	"time"
 )
 
-var wg sync.WaitGroup
-var counter int
-var mutex sync.Mutex
+var counter int64
+
+const iterations = 1000
 
 func main() {
-	wg.Add(2)
-	go count("sheep")
-	go count("dolphin")
+	var wg sync.WaitGroup
+	var mutex sync.Mutex
+
+	wg.Add(iterations)
+	for i := 0; i < iterations; i++ {
+		go func() {
+			mutex.Lock()
+			defer mutex.Unlock()
+			counter++
+			defer wg.Done()
+		}()
+	}
 	wg.Wait()
 	fmt.Println("Final Counter:", counter)
-}
-
-func count(thing string) {
-	for i := 1; i <= 100; i++ {
-		time.Sleep(time.Duration(rand.Intn(20)) * time.Millisecond)
-
-		mutex.Lock()
-		{
-			counter++
-			fmt.Println(i, thing, "Counter:", counter)
-		}
-		mutex.Unlock()
-	}
-	wg.Done()
 }

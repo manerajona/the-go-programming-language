@@ -2,6 +2,8 @@ package architecture
 
 import "fmt"
 
+// mockgen -source=service.go -destination=mock_service.go -package=architecture
+
 // Person is how the architecture package stores a person
 type Person struct {
 	First string

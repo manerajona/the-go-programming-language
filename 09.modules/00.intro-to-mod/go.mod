@@ -1,10 +1,10 @@
-module github.com/manerajona/the-go-programming-language/tree/master/09.modules/00.intro-to-mod
+module demo
 
-go 1.17
+go 1.24
 
-require go.uber.org/zap v1.21.0
+require go.uber.org/zap v1.27.1
 
 require (
 	go.uber.org/atomic v1.9.0 // indirect
-	go.uber.org/multierr v1.8.0 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
 )

@@ -1,4 +1,4 @@
-module github.com/manerajona/the-go-programming-language/tree/master/11.testing/01.gomock
+module architecture
 
 go 1.24
 

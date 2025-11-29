@@ -1,3 +1,3 @@
-module github.com/manerajona/the-go-programming-language/tree/master/10.documentation/01.pkg-doc
+module architecture
 
-go 1.17
+go 1.24

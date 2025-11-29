@@ -1,6 +1,8 @@
-module github.com/manerajona/the-go-programming-language/tree/master/09.modules/01.dependencies
+module hello
 
-go 1.17
+go 1.24.0
+
+toolchain go1.24.4
 
 require (
 	rsc.io/quote v1.5.2
@@ -8,6 +10,6 @@ require (
 )
 
 require (
-	golang.org/x/text v0.3.8 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	rsc.io/sampler v1.99.99 // indirect
 )
